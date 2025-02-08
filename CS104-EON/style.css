@@ -1,0 +1,97 @@
+/* Cyberpunk Theme */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    background-color: #0a0a0a;
+    color: #e0e0ff;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Logo Styling */
+#logo {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Centers the logo */
+    filter: drop-shadow(0 0 15px #4361ee); /* Adds a glowing effect */
+}
+
+/* Header */
+header {
+    padding: 20px;
+    background: linear-gradient(to right, #3a0ca3, #4361ee);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #3a0ca3;
+}
+
+/* Sections */
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    background-color: rgba(20, 20, 40, 0.9);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #4361ee;
+}
+
+/* Form Styling */
+input, textarea, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Orbitron', sans-serif; /* Ensure font is applied */
+}
+
+input, textarea, select {
+    background: #222;
+    color: #e0e0ff;
+    border: 1px solid #4361ee;
+}
+
+button {
+    background: linear-gradient(to right, #3a0ca3, #4361ee);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px #3a0ca3;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #4361ee, #3a0ca3);
+    box-shadow: 0 0 15px #4361ee;
+}
+
+/* Capsule Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: rgba(30, 30, 60, 0.9);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #4361ee;
+}
+
+/* Friend Group Section */
+#friendGroupCode {
+    text-align: center;
+    font-weight: bold;
+    background-color: #111;
+    color: #e0e0ff; /* Ensure text is visible */
+    font-family: 'Orbitron', sans-serif;
+}
+

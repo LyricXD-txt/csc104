@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EonVault - Time Capsules</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="EONVAULT_LOGO.png" alt="EonVault Logo" id="logo">
+        <h1>EonVault</h1>
+        <p>Send messages to the future, unlock memories, and share with friends.</p>
+    </header>
+    
+    <main>
+        <section id="capsule-form">
+            <h2>Create a Time Capsule</h2>
+            <form id="messageForm">
+                <label for="message">Your Message:</label>
+                <textarea id="message" required></textarea>
+                
+                <label for="unlockDate">Unlock Date:</label>
+                <input type="date" id="unlockDate" required>
+                
+                <label for="visibility">Visibility:</label>
+                <select id="visibility">
+                    <option value="private">Private (Only You)</option>
+                    <option value="public">Public (Anyone can read it)</option>
+                    <option value="friends">Friend Group (Share with Friends)</option>
+                </select>
+                
+                <label for="groupCode">Friend Group Code (Optional):</label>
+                <input type="text" id="groupCode" placeholder="Enter or generate a code">
+                
+                <button type="submit">Save Capsule</button>
+            </form>
+            <p id="confirmationMessage" style="display: none; color: #00ff00; font-weight: bold;"></p>
+        </section>
+        
+        <section id="capsule-list">
+            <h2>Recently Unlocked Capsules</h2>
+            <ul id="unlockedCapsules"></ul>
+        </section>
+        
+        <section id="friend-capsules">
+            <h2>Friend Group Capsules</h2>
+            <p>Join a friend group with a code to send and receive time capsules together.</p>
+            <button id="generateCode">Generate Group Code</button>
+            <input type="text" id="friendGroupCode" placeholder="Your group code" readonly>
+            <ul id="friendCapsules"></ul>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
